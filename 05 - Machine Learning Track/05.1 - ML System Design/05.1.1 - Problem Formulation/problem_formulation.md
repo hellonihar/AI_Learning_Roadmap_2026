@@ -1,5 +1,9 @@
 # Problem Formulation
 
+Problem formulation is the process of translating a business need into a well-defined ML task. It is the single most important step in the ML lifecycle — a perfectly executed model solving the wrong problem delivers negative value. Formulation forces you to answer: What business outcome are we driving? Can ML actually help? How do we measure success? What constraints must the system operate within?
+
+Skipping problem formulation is the most common reason ML projects fail. Teams jump straight to data collection and model training without clarifying the objective, and end up optimizing a proxy metric that doesn't move the business needle. A day spent framing the problem correctly — defining the objective, mapping constraints, choosing the task type, setting the system boundary — saves months of building the wrong solution. The quality of the formulation determines the ceiling on the value the ML system can deliver.
+
 ## 1.1 Business Objective → ML Objective
 
 ### Business Goals vs ML Proxy Metrics
