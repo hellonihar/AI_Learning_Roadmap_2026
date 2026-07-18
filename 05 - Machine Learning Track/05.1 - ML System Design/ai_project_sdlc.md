@@ -58,7 +58,7 @@ This document defines the full lifecycle, maps each phase to the detailed guides
 └───────────────────────────┬──────────────────────────────────────────┘
                             ↓
 ┌──────────────────────────────────────────────────────────────────────┐
-│  8.  Governance & Ethics                                            │
+│  8.  Governance & Ethics                         → 05.1.8           │
 │  ──────────────────────────                                          │
 │  Ongoing bias audits, model cards, compliance, responsible ML.       │
 └───────────────────────────┬──────────────────────────────────────────┘
@@ -262,7 +262,7 @@ This document defines the full lifecycle, maps each phase to the detailed guides
 
 ## Phase 8: Governance & Ethics (Ongoing)
 
-**Doc:** `05.1.7 - Feedback and Monitoring/feedback_and_monitoring.md` §7.5
+**Doc:** `05.1.8 - Governance and Ethics/governance_and_ethics.md`
 
 **Goal:** Ensure the model remains fair, transparent, and compliant throughout its lifetime.
 
