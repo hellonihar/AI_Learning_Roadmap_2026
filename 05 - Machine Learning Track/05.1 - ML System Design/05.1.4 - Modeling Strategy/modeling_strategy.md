@@ -1,5 +1,9 @@
 # Modeling Strategy
 
+Modeling strategy is the discipline of choosing the right approach for a given ML problem. It covers everything from selecting the model family (linear model, tree, neural network) to deciding how to train, version, roll out, and roll back models in production. The same problem can be solved with many different modeling strategies — the right one depends on data size, latency requirements, interpretability needs, team expertise, and infrastructure maturity.
+
+A good modeling strategy balances performance against complexity. The most sophisticated model is rarely the best choice for a business problem: a logistic regression that ships in a day and runs at 100μs per prediction often beats a transformer that takes three months to tune and costs $0.01 per inference. The goal isn't to build the most accurate model — it's to build the model that delivers the most business value within the constraints you operate under.
+
 ## 4.1 Model Selection Philosophy
 
 ### Simple Models vs Complex Models
