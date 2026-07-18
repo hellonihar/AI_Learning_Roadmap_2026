@@ -1,5 +1,9 @@
 # Feature System Design
 
+Features are the inputs a model uses to make predictions. Feature system design is the practice of building a reliable, consistent, and cost-effective pipeline that transforms raw data into features for both training and serving. A model is only as good as its features — even the most sophisticated architecture will fail if fed noisy, stale, or incorrectly computed inputs.
+
+A well-designed feature system treats feature computation as a first-class engineering discipline rather than ad-hoc scripts. It ensures training and serving use identical feature logic (eliminating training-serving skew), features are reusable across models (reducing duplication), and feature freshness matches the problem's latency requirements. The cost of getting feature design wrong is high: silent prediction degradation, hard-to-debug production failures, and models that cannot be reproduced. Getting it right means your models receive consistent, trustworthy signals at every prediction.
+
 ## 3.1 Feature Definition
 
 ### Static vs Dynamic Features

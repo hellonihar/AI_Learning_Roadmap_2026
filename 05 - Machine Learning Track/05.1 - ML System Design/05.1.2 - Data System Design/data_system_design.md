@@ -1,5 +1,9 @@
 # Data System Design
 
+Data system design covers the infrastructure and processes for collecting, storing, validating, and serving data for machine learning. Unlike traditional data engineering, ML data systems must handle the full lifecycle: raw event logging, feature computation, label generation, dataset versioning, distribution monitoring, and drift detection — all while maintaining reproducibility and data quality at scale.
+
+A strong data system is the foundation every ML system rests on. Without it, models train on unreliable data, silently degrade in production when data distributions shift, and cannot be reproduced or audited. Poor data quality is the most common reason ML projects fail in production — far more often than model architecture choices. Designing the data system upfront (logging what you need, validating at every stage, versioning datasets immutably, monitoring for drift) saves months of debugging later.
+
 ## 2.1 Data Sources
 
 ### First-Party vs Third-Party Data
