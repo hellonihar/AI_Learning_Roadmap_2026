@@ -1,4 +1,4 @@
-# 11 — Feature Engineering
+# 02.2 — Feature Engineering
 
 Feature engineering is the process of transforming raw data into inputs that ML models can learn from. It is often the highest-leverage activity in applied ML — good features can make simple models perform better than complex models on raw data.
 
