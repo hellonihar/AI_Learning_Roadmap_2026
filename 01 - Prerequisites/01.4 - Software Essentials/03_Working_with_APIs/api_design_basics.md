@@ -1,5 +1,9 @@
 # API Design Basics (FastAPI)
 
+APIs are the primary interface through which AI models deliver value. A model sitting on a GPU server is useless without a well-designed API that lets applications consume its predictions. Every major AI product — ChatGPT, Claude, GitHub Copilot — is powered by APIs under the hood. An API wraps the complexity of model inference into a simple contract: send input, receive output.
+
+For AI engineers, API design is as important as model performance. A 90% accurate model with a poorly designed API will fail in production; a 80% accurate model with a clean, reliable, well-documented API can be a successful product. The API defines how latency is handled, how errors are communicated, how authentication works, and how clients integrate. Getting these details right determines whether your model gets adopted or ignored.
+
 ```python
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
