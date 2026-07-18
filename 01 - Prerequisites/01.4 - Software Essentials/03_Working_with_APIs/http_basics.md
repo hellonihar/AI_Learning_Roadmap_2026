@@ -43,6 +43,58 @@ X-Request-ID: req-001
 ```
 
 ## Rate Limiting
-- Retry-After header tells you when to retry
-- Exponential backoff: wait 1s → 2s → 4s → 8s on 429/503
-- Batch requests where possible to stay under limits
+
+### Headers (common patterns)
+```
+RateLimit-Limit: 100          # requests per window
+RateLimit-Remaining: 42       # remaining in current window
+RateLimit-Reset: 1712345678   # window reset timestamp (Unix)
+Retry-After: 30               # seconds to wait (on 429)
+x-ratelimit-remaining-tokens: 5000   # OpenAI specific
+```
+
+### Strategies
+
+**Client-side throttling**
+```python
+import time
+import httpx
+
+class RateLimiter:
+    def __init__(self, max_calls: int, window: float = 60.0):
+        self.max_calls = max_calls
+        self.window = window
+        self.calls = []
+
+    def wait(self):
+        now = time.time()
+        self.calls = [c for c in self.calls if now - c < self.window]
+        if len(self.calls) >= self.max_calls:
+            sleep = self.calls[0] + self.window - now
+            if sleep > 0:
+                time.sleep(sleep)
+        self.calls.append(time.time())
+
+limiter = RateLimiter(max_calls=50)  # 50 calls per 60s
+```
+
+**Exponential backoff (on 429 / 503)**
+```python
+import time
+
+def request_with_backoff(url, max_retries=5):
+    for attempt in range(max_retries):
+        resp = httpx.get(url)
+        if resp.status_code == 429:
+            wait = int(resp.headers.get("Retry-After", 2 ** attempt))
+            time.sleep(wait)
+            continue
+        resp.raise_for_status()
+        return resp
+    raise Exception("Max retries exceeded")
+```
+
+**Best practices**
+- Add jitter: `wait = base_wait + random.uniform(0, 1)`
+- Batch independent requests instead of calling one-by-one
+- Monitor remaining tokens / requests headers to pre-throttle
