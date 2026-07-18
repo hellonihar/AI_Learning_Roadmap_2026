@@ -1,5 +1,9 @@
 # Evaluation Strategy
 
+Model evaluation is the process of measuring how well a model performs on data it hasn't seen before. It answers two questions: "Does this model work?" and "How well does it work?" Without evaluation, you're guessing — a model that memorized the training data (overfitting) can achieve near-perfect training metrics while failing catastrophically in production.
+
+An evaluation strategy is essential because the answer to "does this model work?" depends on context. A fraud model with 95% precision might be excellent for a low-volume bank but unacceptable for a high-volume payment processor where 5% of legitimate transactions being blocked means millions in lost revenue. Evaluation isn't a single number — it's a multi-faceted assessment covering offline metrics (accuracy, precision, recall), online tests (A/B tests, canary releases), slice-level fairness, and long-term business impact. A well-defined strategy ensures you catch failures before they reach users, make honest comparisons between models, and connect model performance to business outcomes rather than optimizing proxy metrics in isolation.
+
 ## 5.1 Offline Evaluation
 
 ### Train / Validation / Test Splits
