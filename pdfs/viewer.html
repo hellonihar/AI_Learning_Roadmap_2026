@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Viewer</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #525659; display: flex; flex-direction: column; align-items: center; min-height: 100vh; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+        .toolbar { width: 100%; background: #323639; padding: 12px 24px; display: flex; align-items: center; gap: 16px; color: #fff; font-size: 14px; flex-wrap: wrap; }
+        .toolbar a { color: #8ab4f8; text-decoration: none; }
+        .toolbar a:hover { text-decoration: underline; }
+        .file-name { flex: 1; }
+        embed, iframe { width: 100%; max-width: 1000px; height: calc(100vh - 52px); border: none; margin: 0 auto; }
+        .fallback { display: none; padding: 40px; text-align: center; color: #fff; }
+    </style>
+</head>
+<body>
+    <div class="toolbar">
+        <span class="file-name" id="fileName">PDF Viewer</span>
+        <span id="pageInfo"></span>
+        <a href="#" id="downloadLink" download>Download</a>
+    </div>
+
+    <embed id="pdfEmbed" type="application/pdf">
+    <iframe id="pdfIframe" style="display:none"></iframe>
+    <div class="fallback" id="fallback">
+        <p>Your browser doesn't support embedded PDFs.<br>
+        <a id="fallbackLink" href="#">Download the PDF instead</a>.</p>
+    </div>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const file = params.get('file') || 'document.pdf';
+        const embed = document.getElementById('pdfEmbed');
+        const iframe = document.getElementById('pdfIframe');
+        const fallback = document.getElementById('fallback');
+        const fallbackLink = document.getElementById('fallbackLink');
+        const downloadLink = document.getElementById('downloadLink');
+        const fileName = document.getElementById('fileName');
+
+        fileName.textContent = file;
+        const src = file;
+        embed.src = src;
+        iframe.src = src;
+        downloadLink.href = src;
+        fallbackLink.href = src;
+
+        embed.onerror = () => {
+            embed.style.display = 'none';
+            iframe.style.display = 'block';
+            iframe.onerror = () => {
+                iframe.style.display = 'none';
+                fallback.style.display = 'block';
+            };
+        };
+    </script>
+</body>
+</html>
