@@ -12,5 +12,5 @@ Place PDF files in this folder, then open `viewer.html?file=your-file.pdf` in a 
 GitHub renders PDFs directly. Link to any PDF in this repo and GitHub will display it inline:
 
 ```markdown
-[View PDF](./your-file.pdf)
+[View PDF](./1784453327269.pdf)
 ```
