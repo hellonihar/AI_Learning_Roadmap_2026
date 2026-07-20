@@ -474,3 +474,46 @@ only       optimize    optimize    elastic   supply chain
 7. **Rollout in stages, measure at every gate**: Shadow → Pilot → Phased rollout with clear go/no-go criteria at each stage. This builds confidence and allows course correction before full commitment.
 
 8. **Change management is half the project**: The ML model was built in 8 weeks; the organizational adoption took 12 months. Budget for training, communication, and trust-building.
+
+---
+
+## Appendix A: Resume Content for AI Architect
+
+### Sample Resume Bullet Points
+
+**AI Architect | Demand Forecasting & Inventory Optimization**
+- Architected an AI demand forecasting platform for an omnichannel retailer (500+ stores, 10K+ SKUs) that reduced stockouts from 12% to 2.8% and improved inventory turns from 4.2× to 7.2×, delivering $86M in annual business value
+- Designed a hybrid model strategy tiering deep learning (Temporal Fusion Transformer), gradient boosting (LightGBM), and probabilistic statistical models (Prophet, Croston) across SKU volume segments, achieving 18% weighted MAPE — a 37-percentage-point improvement over baseline
+- Built end-to-end ML pipelines on Kubernetes (Kserve, Argo, Spark) processing 5M+ daily transactions from 7 source systems via Kafka, with feature store (Feast + Redis) serving sub-millisecond online features
+- Implemented hierarchical forecast reconciliation (MinT/ERM) with uncertainty quantification (quantile regression), enabling risk-based inventory decisions with prediction interval coverage of 80%
+- Designed phased rollout strategy (shadow → pilot → full) with automated rollback triggers (drift detection, accuracy gates) and human-in-the-loop exception workflows, achieving 90% auto-accept rate within 12 months
+- Established multi-layered monitoring spanning data drift (Evidently, PSI), model accuracy, operational latency (p99 < 500ms), and business impact (stockout rate, margin lift) with automated retraining cadence
+- Partnered with supply chain leadership to drive change management, reducing planner override rate from 35% to under 10% through explainability dashboards (SHAP) and exception-based review workflows
+
+### Keywords for ATS Optimization
+`AI Architecture` `ML System Design` `Demand Forecasting` `Temporal Fusion Transformer` `LightGBM` `Kubernetes` `Kserve` `Kafka` `Spark` `Feature Store` `MLOps` `CI/CD` `Hierarchical Forecasting` `Quantile Regression` `Drift Detection` `FinOps` `GPU Inference` `Terraform` `Argo` `Evidently` `SHAP` `Time-Series` `Multi-Cloud` `Cost Optimization`
+
+---
+
+## Appendix B: LinkedIn Post
+
+> **🚀 Built an AI that saved $86M in 12 months. Here's how.**
+>
+> As an AI Architect, I led the design of a demand forecasting & inventory optimization platform for a national omnichannel retailer. The business problem? $120M in annual losses from stockouts and overstock.
+>
+> **The approach:**
+> • Hybrid model tiering — deep learning (TFT) for high-volume SKUs, LightGBM for mid-tier, Prophet for long-tail. No one-size-fits-all.
+> • Uncertainty quantification — point forecasts are dangerous. Quantile regression gave us prediction intervals, enabling risk-based safety stock decisions.
+> • Human-in-the-loop from day one — planners see SHAP explanations for every forecast. Override rate dropped from 35% to <10% because they trust the system.
+>
+> **The results (12 months):**
+> 📉 Stockouts: 12% → 2.8%
+> 📈 Inventory turns: 4.2× → 7.2×
+> 💰 Revenue recovered + margin saved: $86M/year
+> ✅ 40% of orders auto-accepted without human review
+>
+> **The hardest lesson:** The model took 8 weeks to build. The organizational adoption took 12 months. Change management is half the project.
+>
+> What's your biggest takeaway from scaling AI in supply chain? 👇
+>
+> #AIArchitecture #DemandForecasting #MLOps #SupplyChainAI #RetailAI #MachineLearning

@@ -590,3 +590,47 @@ Claims Intelligence     Fraud Network              Autonomous
 7. **Phase rollout by model maturity, not by timeline**: Document AI was production-ready in 6 weeks; fraud network took 6 months. Let model readiness drive the rollout schedule, not the project plan.
 
 8. **Feedback loops are the highest-leverage investment**: Every human override, every investigation outcome, every supplement request is training data. Architecturing these feedback loops properly was the single biggest driver of long-term accuracy improvement.
+
+---
+
+## Appendix A: Resume Content for AI Architect
+
+### Sample Resume Bullet Points
+
+**AI Architect | Claims Intelligence & Fraud Detection**
+- Designed and deployed an AI-powered claims intelligence platform for a $8B P&C insurer processing 1.2M claims/year, delivering $213M in annual fraud prevention and operational savings
+- Architected a multi-model fraud detection ensemble combining TabNet (tabular features), GraphSAGE/GAT (claimant-provider network analysis), and fine-tuned BERT (adjuster notes), achieving 68% pre-payment fraud detection rate at 4.2% FPR — a 48-percentage-point improvement over rule-based baseline
+- Built real-time claim triage system on Kubernetes (Kserve, Kafka, Redis) processing 3,500+ claims/day with p99 inference latency < 2s, auto-adjudicating 42% of simple claims straight-through
+- Led document intelligence pipeline (LayoutLM v3 + EfficientNet for photo damage assessment) reducing adjuster data entry time from 65% to 20% and cutting median claims cycle time from 21 days to 5 days
+- Implemented graph neural network for fraud ring detection, identifying coordinated fraud networks across 50M+ node graph with precision > 40% at investigation
+- Established MLOps framework with weekly retraining cadence, automated champion/challenger evaluation, drift monitoring (Evidently, NannyML), and rollback triggers — maintaining model performance against adversarial fraud adaptation
+- Designed fairness and bias auditing pipeline ensuring demographic parity across claimant groups, with quarterly compliance reporting aligned to EU AI Act and insurance regulations
+
+### Keywords for ATS Optimization
+`AI Architecture` `ML System Design` `Fraud Detection` `Graph Neural Networks` `GNN` `GraphSAGE` `TabNet` `BERT` `NLP` `Computer Vision` `Kafka` `Kserve` `Kubernetes` `MLOps` `Real-Time ML` `Event-Driven Architecture` `Feature Store` `Explainable AI` `SHAP` `Model Governance` `EU AI Act` `Fairness Auditing` `Insurance AI` `Claims Automation`
+
+---
+
+## Appendix B: LinkedIn Post
+
+> **🛡️ How we cut insurance fraud losses by $165M/year with AI**
+>
+> As an AI Architect, I led the design of a claims intelligence platform for a major P&C insurer. 80% of fraudulent claims were being paid and only recovered 30% of the time. We needed to find fraud before payment — at scale.
+>
+> **The architecture:**
+> • Multi-model fraud ensemble: TabNet for claim patterns, GraphSAGE for provider-claimant networks, BERT for adjuster notes — fused into a single fraud score
+> • Real-time triage: every claim scored in <5s, 42% auto-adjudicated straight-through
+> • Document AI: automated extraction from PDFs, photos, and handwritten notes — cutting adjuster data entry from 65% to 20% of their day
+>
+> **18-month results:**
+> 🚨 Fraud detection (pre-payment): 20% → 68%
+> ⏱️ Claims cycle time: 21 days → 5 days
+> ✅ Auto-STP rate: 0% → 42%
+> 💰 Fraud $ prevented: $165M/year
+> 📉 Litigation rate on denials: 12% → 2.5%
+>
+> **Biggest lesson:** Graph neural networks are a superpower for fraud detection. Single-claim models miss the network — rings of claimants sharing providers, addresses, and vehicles. A GNN catches what pointwise models can't see.
+>
+> What's the most creative fraud detection approach you've seen? 👇
+>
+> #AIArchitecture #FraudDetection #InsuranceAI #GraphNeuralNetworks #ClaimsAutomation #MLOps
