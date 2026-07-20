@@ -45,6 +45,29 @@ Hands-on with PyTorch, NLP, computer vision, and time series using deep learning
 - **[07.3 - LLM Engineering](./07%20-%20Research%20Track/07.3%20-%20LLM%20Engineering)** &mdash; Data, tokenization, pre-training, fine-tuning, eval, optimization
 - **[07.4 - Deployment](./07%20-%20Research%20Track/07.4%20-%20Deployment)** &mdash; Model storage/serving, API development, deployment, post-deployment
 
+### [08 - AI Architect Track](./08%20-%20AI%20Architect%20Track)
+System architecture, governance, and strategy for senior engineers and AI architects.
+- **[08.1 - AI System Architecture & Design Patterns](./08%20-%20AI%20Architect%20Track/08.1%20-%20AI%20System%20Architecture%20%26%20Design%20Patterns)** &mdash; Distributed ML systems, microservices, event-driven pipelines, model serving patterns
+- **[08.2 - MLOps at Scale & Platform Engineering](./08%20-%20AI%20Architect%20Track/08.2%20-%20MLOps%20at%20Scale%20%26%20Platform%20Engineering)** &mdash; Self-serve ML platforms, CI/CD, monitoring, platform governance
+- **[08.3 - Cloud AI Platform Architecture (Multi-cloud)](./08%20-%20AI%20Architect%20Track/08.3%20-%20Cloud%20AI%20Platform%20Architecture%20(Multi-cloud))** &mdash; Cloud-agnostic AI, multi-cloud DR, cost arbitrage, IaC
+- **[08.4 - LLM and LMM Architecture and RAG Systems Design](./08%20-%20AI%20Architect%20Track/08.4%20-%20LLM%20and%20LMM%20Architecture%20and%20RAG%20Systems%20Design)** &mdash; LLM serving, RAG architectures, multimodal pipelines, guardrails
+- **[08.5 - AI Governance, Security & Compliance](./08%20-%20AI%20Architect%20Track/08.5%20-%20AI%20Governance%2C%20Security%20%26%20Compliance)** &mdash; Model risk management, regulations, fairness, bias auditing
+- **[08.6 - Performance Engineering & Cost Optimization](./08%20-%20AI%20Architect%20Track/08.6%20-%20Performance%20Engineering%20%26%20Cost%20Optimization)** &mdash; Model compression, inference acceleration, FinOps for AI
+- **[08.7 - Data Architecture for AI](./08%20-%20AI%20Architect%20Track/08.7%20-%20Data%20Architecture%20for%20AI)** &mdash; Data mesh, streaming features, feature stores, data contracts
+- **[08.8 - AI Strategy, Roadmap & ROI](./08%20-%20AI%20Architect%20Track/08.8%20-%20AI%20Strategy%2C%20Roadmap%20%26%20ROI)** &mdash; Business cases, build-vs-buy, OKRs, organizational design
+- **[08.9 - Emerging Architectures & Research Translation](./08%20-%20AI%20Architect%20Track/08.9%20-%20Emerging%20Architectures%20%26%20Research%20Translation)** &mdash; Agentic systems, neuro-symbolic AI, world models, test-time compute scaling
+- **Capstones:**
+  - **[08.10 - Enterprise AI Platform](./08%20-%20AI%20Architect%20Track/08.10%20-%20Capstone%20Enterprise%20AI%20Platform)** &mdash; Full platform design with ADRs, cost model, migration plan, live review
+  - **[08.11 - LLM Knowledge System](./08%20-%20AI%20Architect%20Track/08.11%20-%20Capstone%20LLM%20Knowledge%20System)** &mdash; RAG + agents + multi-modal search for enterprise knowledge
+  - **[08.12 - Real-Time Fraud Detection](./08%20-%20AI%20Architect%20Track/08.12%20-%20Capstone%20Real-Time%20Fraud%20Detection)** &mdash; Sub-100ms streaming ML at 20k TPS with PCI-DSS compliance
+  - **[08.13 - Multi-Cloud AI Infrastructure](./08%20-%20AI%20Architect%20Track/08.13%20-%20Capstone%20Multi-Cloud%20AI%20Infrastructure)** &mdash; Cloud-agnostic migration, cost arbitrage, DR across clouds
+  - **[08.14 - AI Governance Program](./08%20-%20AI%20Architect%20Track/08.14%20-%20Capstone%20AI%20Governance%20Program)** &mdash; NIST AI RMF, EU AI Act, red teaming, fairness thresholds, 3LoD org
+
+### [09 - Real World Business Cases](./09%20-%20Real%20World%20Business%20Cases)
+End-to-end AI implementation case studies with full lifecycle documentation, resume content, and LinkedIn posts.
+- **[01 - Retail Demand Forecasting](./09%20-%20Real%20World%20Business%20Cases/01-retail-demand-forecasting.md)** &mdash; AI-driven inventory optimization for omnichannel retail ($86M annual impact)
+- **[02 - Insurance Claims Intelligence](./09%20-%20Real%20World%20Business%20Cases/02-insurance-claims-intelligence.md)** &mdash; AI-powered fraud detection & claims automation for P&C insurance ($213M annual impact)
+
 ---
 
 ## Speaker Script — From Notebook to Production: AI Delivery Across the SDLC
